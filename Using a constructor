@@ -1,0 +1,27 @@
+class Dog
+{
+public:
+    int age;
+    string name, race, voice;
+    Dog(int new_age, string new_name, string new_race, string new_voice);
+    void PrintInformation();
+    string Bark();
+};
+
+Dog::Dog(int new_age, string new_name, string new_race, string new_voice)
+{
+    age = new_age;
+    name = new_name;
+    race = new_race;
+    voice = new_voice;
+}
+
+string Dog::Bark()
+{
+  return "Hau!!!" ;
+}
+
+void Dog::PrintInformation()
+{
+  cout << "Name: " << name << "\nAge: " << age << "\nRace: " << race << endl;
+}
