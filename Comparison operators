@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+      {
+      	int n1;	
+		string gender;	
+	
+		cout << "Are you a male or a female (m/f):";
+   		cin >> gender;
+		  
+      	cout << "Your age:";
+      	cin >> n1;
+        
+		if((n1 >= 0) && (n1 <= 55) && (gender.compare("m") == 0)) {
+      		cout << "You are a man in his prime!" << endl;
+  		}
+		   
+		else if((n1 >= 56) && (n1 <= 100) && (gender.compare("m") == 0)) {
+      		cout << "You are a wise man!" << endl;
+  		}
+		
+		else if((n1 >= 0) && (n1 <= 55) && (gender.compare("f") == 0)) {
+      		cout << "You are like a blooming flower!" << endl;
+  		}
+		   
+		else if((n1 >= 56) && (n1 <= 100) && (gender.compare("f") == 0)) {
+      		cout << "You look young for your age!" << endl;
+  		}
+		   
+  		else {
+      		cout << "An error occurred in the program!" << endl;
+   		}
+	
+		return 0;
+      }
