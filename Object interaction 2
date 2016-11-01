@@ -1,0 +1,16 @@
+class Printer
+{
+public:
+    void Print();
+};
+
+void Printer::Print()
+{
+    int num1, num2;
+    cout << "Give a first integer: ";
+    cin >> num1;
+    cout << "Give a second integer: ";
+    cin >> num2;
+    Calculator add;
+    cout << "Sum: " << add.Sum(num1, num2) << endl;
+}
