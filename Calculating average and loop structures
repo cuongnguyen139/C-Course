@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{ 
+ int i = 1;
+ float avg = 1;
+ float sum = 0;
+ int n1;		  
+ cout << "Program calculates the test grade average.\n";
+ cout << "Finish inputting with a negative number.\n";
+
+	
+ while(i > 0) 
+    {  
+       cout << "Input grade (4-10) ";   
+       cin >> n1;  
+	 
+	   if(n1 > 0) {  
+         sum = sum + n1; 
+	  	 avg = sum/i;
+	     i++;  
+       }
+	   else if(n1 == -2) {
+		 i = i-2;
+         break;
+	   }
+       else if(n1 < 0) {  
+         break;
+       } 
+    }
+		
+	cout << "You inputted " << i-1 << " grades.\n";
+	cout << "Grade average: " << avg << endl;
+ return 0; 
+} 
